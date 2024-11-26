@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import Providers from './Providers';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/700.css';
@@ -25,6 +26,7 @@ export default function ({ children }) {
       </head>
       <body>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
