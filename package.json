@@ -65,6 +65,7 @@
   ],
   "dependencies": {
     "@clickhouse/client": "^1.4.1",
+    "@vercel/analytics": "^1.4.1",
     "@date-fns/utc": "^1.2.0",
     "@dicebear/collection": "^9.2.1",
     "@dicebear/core": "^9.2.1",
