@@ -12,10 +12,10 @@ export function Favicon({ domain, ...props }) {
 
   const hostName = domain ? getHostName(domain) : null;
   const src = hostName
-    ? `https://icons.duckduckgo.com/ip3/${GROUPED_DOMAINS[hostName]?.domain || hostName}.ico`
+    ? `https://favicon.im/${GROUPED_DOMAINS[hostName]?.domain || hostName}?larger=true`
     : null;
 
-  return hostName ? <img src={src} width={16} height={16} alt="" {...props} /> : null;
+  return hostName ? <img src={src} width={24} height={24} alt="" {...props} /> : null;
 }
 
 export default Favicon;
